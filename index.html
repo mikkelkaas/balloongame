@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#87CEEB">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Balloon Game">
+    <link rel="manifest" href="manifest.json">
     <title>Balloon Shooter Game</title>
     <style>
         * {
@@ -35,17 +40,7 @@
             z-index: 10;
         }
 
-        #instructions {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 24px;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            text-align: center;
-            z-index: 10;
-        }
+
 
         .cloud {
             position: absolute;
@@ -57,7 +52,6 @@
 </head>
 <body>
     <div id="score">Score: 0</div>
-    <div id="instructions">Click balloons to pop them!<br>🎈 Good balloons = +1 point | 💀 Bad balloons = -5 points</div>
     <canvas id="gameCanvas"></canvas>
 
     <script>
