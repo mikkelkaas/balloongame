@@ -3,6 +3,7 @@ FROM nginx:alpine
 
 # Copy the game files to nginx html directory
 COPY index.html /usr/share/nginx/html/
+COPY manifest.json /usr/share/nginx/html/
 COPY *.png /usr/share/nginx/html/
 
 # Expose port 80
